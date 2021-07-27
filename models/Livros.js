@@ -1,38 +1,37 @@
-module.exports = (sequelize, DataType) => {
-  const Livro = sequelize.define(
-    "Livro",
-    {
+module.exports = (sequelize, DataTypes) => {
+  const Livros = sequelize.define(
+    "Livros", {
       id: {
-        type: Sequelize.INTEGER,
+        type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
         allowNull: false,
       },
       titulo: {
-        type: Sequelize.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
       },
       quantidade_paginas: {
         allowNull: false,
-        type: Sequelize.INTEGER,
+        type: DataTypes.INTEGER,
       },
       autor: {
-        type: Sequelize.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
       },
       ano_lancamento: {
         allowNull: false,
-        type: Sequelize.INTEGER,
+        type: DataTypes.INTEGER,
       },
       estoque: {
         allowNull: false,
-        type: Sequelize.INTEGER,
+        type: DataTypes.INTEGER,
       },
-    },
-    {
+    }, {
       tableName: "livros",
+      timestamps: false
     }
   );
-
-  return Livro;
+  
+  return Livros;
 };

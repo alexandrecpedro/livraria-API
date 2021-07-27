@@ -4,7 +4,7 @@ USE livraria;
 
 create table livros (
 	id INT primary key auto_increment,
-	titulo VARCHAR(100) NOT NULL,
+	titulo VARCHAR(50) NOT NULL,
 	quantidade_paginas INT NOT NULL,
 	autor VARCHAR(50) NOT NULL,
 	ano_lancamento VARCHAR(50) NOT NULL,
@@ -13,7 +13,7 @@ create table livros (
 
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Recess: School''s Out', 99, 'Cheryl Herculeson', 2005, 75);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('''Human'' Factor, The (Human Factor, The)', 393, 'Rickard Itschakov', 2001, 51);
-insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Riding Alone for Thousands of Miles (Qian li zou dan qi)', 402, 'Cicely Plaide', 1993, 39);
+insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Riding Alone Thousands of Miles', 402, 'Cicely Plaide', 1993, 39);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Player, The', 178, 'Binny Tofpik', 2000, 64);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Needle, The (Igla)', 274, 'Charleen Gundrey', 1993, 56);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('End of the Game (Der Richter und sein Henker)', 269, 'Peri Rigbye', 2008, 25);
@@ -41,7 +41,7 @@ insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) 
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Alla älskar Alice', 225, 'Jeffry Gibbeson', 2004, 56);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Surgeon, The', 264, 'Garvey Cleworth', 1992, 87);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Daughter of Dr. Jeckyll', 165, 'Edythe Maurice', 2002, 89);
-insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Chambermaid on the Titanic, The (Femme de chambre du Titanic, La)', 115, 'Marnia Cubberley', 1998, 75);
+insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Chambermaid on the Titanic', 115, 'Marnia Cubberley', 1998, 75);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('The Hearts of Age', 378, 'Tymon Girodin', 2010, 68);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Mr. Kinky', 117, 'Russ Collocott', 2009, 66);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Play it to the Bone', 376, 'Haily Stilldale', 1976, 74);
@@ -63,15 +63,15 @@ insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) 
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Resurrecting the Champ', 140, 'Fraze Whickman', 1997, 75);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Given Word, The (O Pagador de Promessas)', 121, 'Xever Nelsen', 2005, 69);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Cave, The', 448, 'Prince Saladine', 1995, 79);
-insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Treasure of the Yankee Zephyr (Race for the Yankee Zephyr)', 470, 'Fawne Wakeham', 2007, 45);
+insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Treasure of the Yankee Zephyr', 470, 'Fawne Wakeham', 2007, 45);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Lake Placid', 183, 'Genevieve Coe', 2007, 97);
-insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Vivre sa vie: Film en douze tableaux (My Life to Live)', 412, 'Elle Patton', 1989, 34);
+insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Vivre sa vie: Film en douze tableaux', 412, 'Elle Patton', 1989, 34);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Kevin Hart: Let Me Explain', 244, 'Marwin Petrelluzzi', 1998, 52);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Return of the Secaucus 7', 110, 'Ervin Dowse', 1987, 76);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Flaming Star', 248, 'Jennee Warburton', 1997, 31);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Misunderstood', 149, 'Sarajane Kemball', 2008, 17);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Drones', 423, 'Kinsley Le Prevost', 2009, 67);
-insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('In Eagle Shadow Fist (Ding tian li di) (Fist of Anger)', 269, 'Johna Betteney', 1999, 6);
+insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('In Eagle Shadow Fist', 269, 'Johna Betteney', 1999, 6);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Istanbul', 149, 'Petra Clark', 2001, 87);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Anvil! The Story of Anvil', 430, 'Sallie Menloe', 1987, 6);
 insert into livros (titulo, quantidade_paginas, autor, ano_lancamento, estoque) values ('Thale', 437, 'Emelen Samples', 2001, 7);
