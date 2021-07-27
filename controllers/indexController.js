@@ -2,7 +2,9 @@ const { Livros } = require('../models')
 
 const indexController = {
     index: async (req, res) => {
-        const livros = await Livros.findAll()
+        const livros = await Livros.findAll({
+            order: [['titulo', 'ASC']]
+        })
         return res.status(200).json(livros)
     },
     mostraLivro: async (req, res) => {
