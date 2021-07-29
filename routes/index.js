@@ -1,5 +1,6 @@
 const express = require("express");
 const indexController = require("../controllers/indexController");
+const usuarioController = require("../controllers/usuarioController");
 const router = express.Router();
 
 router.get("/", function (req, res, next) {
@@ -20,6 +21,9 @@ router.put('/livros/:id', indexController.atualizarLivro);
 
 // Deleta Livro - http://localhost:3000/livros/:id
 router.put('/livros/:id', indexController.deletarLivro);
+
+// Buscar CEP - http://localhost:3000//usuario/buscar/:cep
+router.get('/usuario/buscar/:cep', usuarioController.buscarCep);
 
 
 module.exports = router;
